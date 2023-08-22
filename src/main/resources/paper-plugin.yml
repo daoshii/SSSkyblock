@@ -5,10 +5,3 @@ api-version: '1.20'
 load: STARTUP
 authors: [daoshii]
 description: Skyblock made for Saltwater Scourge
-commands:
-  island:
-    description: Create island or open island menu
-    usage: /<command>
-    aliases:
-      - is
-      - ismenu
