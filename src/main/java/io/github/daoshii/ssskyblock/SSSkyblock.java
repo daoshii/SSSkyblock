@@ -1,6 +1,6 @@
 package io.github.daoshii.ssskyblock;
 
-import io.github.daoshii.ssskyblock.managers.CommandManager;
+import io.github.daoshii.ssskyblock.commands.Island;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class SSSkyblock extends JavaPlugin {
@@ -10,7 +10,7 @@ public final class SSSkyblock extends JavaPlugin {
         // Plugin startup logic
         getLogger().info("SSSkyblock is enabled!");
 
-        new CommandManager(this);
+        getCommand("island").setExecutor(new Island(this));
     }
 
     @Override
