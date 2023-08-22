@@ -1,0 +1,15 @@
+name: SSSkyblock
+version: '${project.version}'
+main: io.github.daoshii.ssskyblock.SSSkyblock
+description: Skyblock made for Saltwater Scourge
+author: [daoshii]
+website: https://github.com/daoshii
+api-version: '1.20'
+load: STARTUP
+commands:
+  island:
+    description: Create island or open island menu
+    usage: /<command>
+    aliases:
+      - is
+      - ismenu
