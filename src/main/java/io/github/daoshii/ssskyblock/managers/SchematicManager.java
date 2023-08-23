@@ -56,7 +56,7 @@ public class SchematicManager {
                     plugin.getLogger().warning("Failed to paste schematic due to world edit exception");
                 }
             } catch (IOException e) {
-                plugin.getLogger().warning("Failed to paste schematic due to IO exception");
+                plugin.getLogger().warning("Failed to paste schematic, does a schematic file exist?");
             }
         } else {
             plugin.getLogger().warning("Failed to paste schematic due to file format not found");

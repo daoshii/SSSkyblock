@@ -17,11 +17,10 @@ public class Island implements CommandExecutor {
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull Command command, @NotNull String label, String[] args) {
-        if (sender instanceof Player) {
-            Player player = (Player) sender;
+        if (sender instanceof Player player) {
             if (args.length == 0) {
-                File pirateIsland = new File(plugin.getDataFolder(), "pirateisland.schem");
-                plugin.getLogger().info(pirateIsland + " has been created.");
+                File pirateIsland = new File(plugin.getDataFolder(),"/schematics/pirateisland.schem");
+                player.sendMessage(pirateIsland.exists()? "Island created!" : "Is");
 
                 SchematicManager islandCreator = new SchematicManager(plugin);
                 islandCreator.paste(player.getLocation(), pirateIsland);

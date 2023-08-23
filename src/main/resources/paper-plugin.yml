@@ -1,7 +1,0 @@
-name: SSSkyblock
-version: '${project.version}'
-main: io.github.daoshii.ssskyblock.SSSkyblock
-api-version: '1.20'
-load: STARTUP
-authors: [daoshii]
-description: Skyblock made for Saltwater Scourge
